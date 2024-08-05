@@ -1,14 +1,14 @@
 ﻿const Discord = require('discord.js');
 const client = new Discord.Client();
-var prefix = "1"; // البيرفكس حطها بين ال " اقترح تخليها زي ما هي
+var prefix = "1"; 
 
 client.on('ready', () => {
-  console.log(`Welcome Bro ${client.user.tag}!`);  // لا تعدل شي هنا
+  console.log(`Welcome Bro ${client.user.tag}!`); 
 });
 
-client.on('ready', async() => { // ولا تعدل شي في اي مكان غير تحت
-var server = "466202032844308481"; // ايدي السررفر اللي بتحط فيه البوت
-var channel = "515248689061822464";//ايدي الروم اللي بسوي فيه سبام البوت
+client.on('ready', async() => { 
+var server = "466202032844308481"; 
+var channel = "515248689061822464";
     setInterval(()=>{
     client.guilds.get(server).channels.get(channel).send('```INCR_iSryManYT SPAAAAM ~ INCR_iSryManYT SPAAAAM ~ INCR_iSryManYT SPAAAAM ~ INCR_iSryManYT SPAAAAM ~ INCR_iSryManYT SPAAAAM ~ INCR_iSryManYT SPAAAAM ~ INCR_iSryManYT SPAAAAM ~ INCR_iSryManYT SPAAAAM ~ INCR_iSryManYT SPAAAAM ~ ') 
     },305);
@@ -28,7 +28,7 @@ if(!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send('
    message.channel.sendMessage(args.join("  "))
    message.delete()
   }
- }); // لا تعدل شي باي مكان
+ });
 
  
 client.login(process.env.BOT_TOKEN); // هنا لا تعدل شي
